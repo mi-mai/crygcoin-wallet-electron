@@ -2,22 +2,22 @@ var config = {};
 
 // self explanatory, your application name, descriptions, etc
 config.appName = 'WalletShell';
-config.appDescription = 'TurtleCoin Wallet';
+config.appDescription = 'CryGCoin Wallet';
 config.appSlogan = 'Slow and steady wins the race!';
-config.appId = 'lol.turtlecoin.walletshell';
-config.appGitRepo = 'https://github.com/turtlecoin/turtle-wallet-electron';
+config.appId = 'xyz.cryg.walletshell';
+config.appGitRepo = 'https://github.com/mi-mai/crygcoin-wallet-electron';
 
 // default port number for your daemon (e.g. TurtleCoind)
-config.daemonDefaultRpcPort = 11898;
+config.daemonDefaultRpcPort = 18898;
 
 // wallet file created by this app will have this extension
 config.walletFileDefaultExt = 'twl';
 
 // change this to match your wallet service executable filename
-config.walletServiceBinaryFilename = 'turtle-service';
+config.walletServiceBinaryFilename = 'cryg-service';
 
 // version on the bundled service (turtle-service)
-config.walletServiceBinaryVersion = "v0.13.0";
+config.walletServiceBinaryVersion = "v0.0.1";
 
 // config file format supported by wallet service, possible values:
 // ini -->  for turtle service (or its forks) version <= v0.8.3
@@ -28,36 +28,37 @@ config.walletServiceConfigFormat = "json";
 config.walletServiceRpcPort = 8070;
 
 // block explorer url, the [[TX_HASH]] will be substituted w/ actual transaction hash
-config.blockExplorerUrl = 'https://explorer.turtlecoin.lol/transaction.html?hash=[[TX_HASH]]';
+config.blockExplorerUrl = 'http://ex.cryg.xyz/transaction.html?hash=[[TX_HASH]]';
 
 // default remote node to connect to, set this to a known reliable node for 'just works' user experience
-config.remoteNodeDefaultHost = 'turtlenode.co';
+config.remoteNodeDefaultHost = 'nodes.cryg.xyz';
 
 
 // remote node list update url, set to null if you don't have one
 // for TRTL:
 // raw list: https://raw.githubusercontent.com/turtlecoin/turtlecoin-nodes-json/master/turtlecoin-nodes.json
 // filtered: https://trtl.nodes.pub/api/getNodes
-config.remoteNodeListUpdateUrl = 'https://trtl.nodes.pub/api/getNodes';
+config.remoteNodeListUpdateUrl = 'http://node.cryg.xyz/api/getNodes';
 
 // set to false if using raw/unfiltered node list
 config.remoteNodeListFiltered = true;
 
 // fallback remote node list, in case fetching update failed, fill this with known to works remote nodes
 config.remoteNodeListFallback = [
-  'turtlenode.co:11898',
-  'nodes.hashvault.pro:11898',
-  'turtle.mine.nu:11898',
-];
+  'nd1.cryg.xyz:18898',
+  'nd2.cryg.xyz:18898',
+  'nd3.cryg.xyz:18898',
+  'nd4.cryg.xyz:18898',
+  ];
 config.remoteNodeCacheSupported = false;
 config.remoteNodeSslSupported = false;
 
 // your currency name
-config.assetName = 'TurtleCoin';
+config.assetName = 'CryGCoin';
 // your currency ticker
-config.assetTicker = 'TRTL';
+config.assetTicker = 'CRYG';
 // your currency address prefix, for address validation
-config.addressPrefix = 'TRTL';
+config.addressPrefix = 'cRYG';
 // standard wallet address length, for address validation
 config.addressLength = 99;
 // integrated wallet address length, for address validation. Added length is length of payment ID encoded in base58.
