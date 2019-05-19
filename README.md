@@ -1,10 +1,15 @@
-## WalletShell - GUI wallet for TurtleCoin.
+## WalletShell - GUI wallet for CryGCoin.
 
 ![WalletShell Screens](https://i.imgur.com/41Ujq0S.gif "WalletShell Screens")
 
+
+This is a GUI wallet for TurtleCoin made using Electron, this means it's written in JavaScript, HTML and CSS.
+
+It is meant to be able to work on Windows, Linux and MacOS, however so far we've only been able to test it on Linux & Windows.
+
 ### Features:
 
-This wallet contains the basic functions required to manage your TurtleCoin assets:
+This wallet contains the basic functions required to manage your CryGCoin assets:
 
 * Wallet creation:
   * Create new wallet.
@@ -28,7 +33,7 @@ This wallet contains the basic functions required to manage your TurtleCoin asse
   * Allow to optionally create password protected address book.
 * Misc:
   * Option to use system tray (on closing/minimizing wallet)
-  * Provides list of public nodes, fetch/updated daily from [turtlecoin-nodes-json](https://github.com/turtlecoin/turtlecoin-nodes-json) repo.
+  * Provides list of public nodes, fetch/updated daily from [crygcoin-nodes-json](https://github.com/mi-mai/turtlecoin-nodes-json) repo.
   * Allow to add custom node address.
   * Theme: Dark & Light Mode
   * [Keyboard shortcuts](docs/shortcut.md)
@@ -36,17 +41,17 @@ This wallet contains the basic functions required to manage your TurtleCoin asse
 ### Download &amp; Run WalletShell
 
 #### Windows:
-1. Download the latest installer here: https://github.com/turtlecoin/turtle-wallet-electron/releases/latest
+1. Download the latest installer here: https://github.com/mi-mai/crygcoin-wallet-electron/releases/latest
 2. Run the installer (`walletshell-<version>-win-setup.exe`) and follow the installation wizard.
 3. Launch WalletShell via start menu or desktop shortcut.
 
 #### GNU/Linux (AppImage):
-1. Download latest AppImage bundle here: https://github.com/turtlecoin/turtle-wallet-electron/releases/latest
+1. Download latest AppImage bundle here: https://github.com/mi-mai/crygcoin-wallet-electron/releases/latest
 2. Make it executable, either via GUI file manager or command line, e.g. `chmod +x walletshell-<version>-linux.AppImage`
 3. Run/execute the file, double click in file manager, or run via shell/command line (See: https://docs.appimage.org/user-guide/run-appimages.html)
 
 #### macOS
-1. Download latest archive here: https://github.com/turtlecoin/turtle-wallet-electron/releases/latest
+1. Download latest archive here: https://github.com/mi-mai/crygcoin-wallet-electron/releases/latest
 2. Extract downloaded zip archived
 3. Run the executable binary (`WalletShell.app/Contents/MacOs/WalletShell`)
 
@@ -59,16 +64,17 @@ You need to have `Node.js` and `npm` installed, go to https://nodejs.org and fin
 Once you have Node+npm installed:
 ```
 # assuming you're building it on GNU/Linux
-# first, download turtle-service binary for each platform
-# from TurtleCoin official repo
-# https://github.com/turtlecoin/turtlecoin/releases
-# extract the turtle-service executable somewhere
+# first, download cryg-service binary for each platform
+# from CryGCoin official repo
+# https://github.com/mi-mai/crygcoin-cli/releases
+# extract the cryg-service executable somewhere
 
 # clone the repo
 $ git clone https://github.com/turtlecoin/turtle-wallet-electron
-$ cd turtle-wallet-electron
+$ cd cryg-wallet-electron
 
-# install dependencies
+# install dependencies 
+# sudo npm install -g electron --unsafe-perm=true --allow-root
 $ npm install
 
 # create build+dist directory
@@ -79,17 +85,17 @@ $ cp ./src/assets/icon.* ./build/
 
 # build GNU/Linux package
 $ mkdir -p ./bin/lin
-$ cp /path/to/linux-version-of/turtle-service ./bin/lin/
+$ cp /path/to/linux-version-of/cryg-service ./bin/lin/
 $ npm run dist-lin
 
 # build Windows package (you need to have wine 2.0+ installed)
 $ mkdir -p ./bin/win
-$ cp /path/to/win-version-of/turtle-service.exe ./bin/win/
+$ cp /path/to/win-version-of/cryg-service.exe ./bin/win/
 $ npm run dist-win
 
 # build OSX package
 $ mkdir -p ./bin/osx
-$ cp /path/to/osx-version-of/turtle-service ./bin/osx/
+$ cp /path/to/osx-version-of/cryg-service ./bin/osx/
 $ npm run dist-mac
 ```
 

@@ -84,7 +84,7 @@ config.addressBookObfuscationKey = '79009fb00ca1b7130832a42de45142cf6c4b7f333fe6
 config.addressBookSampleEntries = [
   {
     name: 'WalletShell Donation',
-    address: 'TRTLv1A26ngXApin33p1JsSE9Yf6REj97Xruz15D4JtSg1wuqYTmsPj5Geu2kHtBzD8TCsfd5dbdYRsrhNXMGyvtJ61AoYqLXVS',
+    address: 'cRYGbwTpAt12N9EzUP4w42JQDP1XWYWNe6o4jfXufxUtMsQ1ipq2jXZD84FSAKyBcUjVza9j9UsvL88NR1VxExKADcgEwvG9A2J',
     paymentId: '',
   }
 ];
