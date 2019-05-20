@@ -218,7 +218,7 @@ function populateElementVars() {
 // crude/junk template :)
 let jtfr = {
     tFind: [
-        "WalletShell",
+        "WalletShellCryG",
         "https://github.com/mi-mai/crygcoin-wallet-electron",
         "CryGCoin",
         "CRYG",

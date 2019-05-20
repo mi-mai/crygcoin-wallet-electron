@@ -1,6 +1,6 @@
 {
-  "name": "walletshell",
-  "productName": "WalletShell",
+  "name": "walletshellcryg",
+  "productName": "WalletShellGRYG",
   "description": "CryGCoin GUI Wallet",
   "version": "v0.1.1",
   "homepage": "https://github.com/mi-mai/crygcoin-wallet-electron",
@@ -37,7 +37,7 @@
     "request-promise-native": "^1.0.7"
   },
   "build": {
-    "appId": "xyz.cryg.walletshell",
+    "appId": "xyz.cryg.walletshellcryg",
     "copyright": "Copyright (c) 2018 Rixombea, Macroshock, TurtleCoin Developers, 2019 CryGCoin Developers",
     "directories": {
       "output": "dist",

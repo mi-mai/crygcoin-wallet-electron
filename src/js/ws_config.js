@@ -1,10 +1,10 @@
 var config = {};
 
 // self explanatory, your application name, descriptions, etc
-config.appName = 'WalletShell';
+config.appName = 'WalletShellCryG';
 config.appDescription = 'CryGCoin Wallet';
 config.appSlogan = 'Slow and steady wins the race!';
-config.appId = 'xyz.cryg.walletshell';
+config.appId = 'xyz.cryg.walletshellcryg';
 config.appGitRepo = 'https://github.com/mi-mai/crygcoin-wallet-electron';
 
 // default port number for your daemon (e.g. TurtleCoind)
