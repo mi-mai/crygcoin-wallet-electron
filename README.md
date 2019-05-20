@@ -1,9 +1,9 @@
 ## WalletShell - GUI wallet for CryGCoin.
 
-![WalletShell Screens](https://i.imgur.com/41Ujq0S.gif "WalletShell Screens")
+![WalletShell Screens](https://github.com/mi-mai/crygcoin-wallet-electron/blob/master/src/assets/guiwlt2.png "WalletShell Screens")
 
 
-This is a GUI wallet for TurtleCoin made using Electron, this means it's written in JavaScript, HTML and CSS.
+This is a GUI wallet for CryGCoin (fork TurtleCoin) made using Electron, this means it's written in JavaScript, HTML and CSS.
 
 It is meant to be able to work on Windows, Linux and MacOS, however so far we've only been able to test it on Linux & Windows.
 
