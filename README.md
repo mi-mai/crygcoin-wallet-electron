@@ -7,6 +7,8 @@ This is a GUI wallet for CryGCoin (fork TurtleCoin) made using Electron, this me
 
 It is meant to be able to work on Windows, Linux and MacOS, however so far we've only been able to test it on Linux & Windows.
 
+Last release: https://github.com/mi-mai/crygcoin-wallet-electron/releases/
+
 ### Features:
 
 This wallet contains the basic functions required to manage your CryGCoin assets:
