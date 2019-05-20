@@ -11,7 +11,7 @@ config.appGitRepo = 'https://github.com/mi-mai/crygcoin-wallet-electron';
 config.daemonDefaultRpcPort = 18898;
 
 // wallet file created by this app will have this extension
-config.walletFileDefaultExt = 'twl';
+config.walletFileDefaultExt = 'cwl';
 
 // change this to match your wallet service executable filename
 config.walletServiceBinaryFilename = 'cryg-service';
@@ -28,7 +28,8 @@ config.walletServiceConfigFormat = "json";
 config.walletServiceRpcPort = 8070;
 
 // block explorer url, the [[TX_HASH]] will be substituted w/ actual transaction hash
-config.blockExplorerUrl = 'http://ex.cryg.xyz/transaction.html?hash=[[TX_HASH]]';
+//config.blockExplorerUrl = 'http://ex.cryg.xyz/transaction.html?hash=[[TX_HASH]]';
+config.blockExplorerUrl = 'http://ex.cryg.xyz/?hash=[[TX_HASH]]#blockchain_block';
 
 // default remote node to connect to, set this to a known reliable node for 'just works' user experience
 config.remoteNodeDefaultHost = 'nodes.cryg.xyz';
@@ -45,10 +46,10 @@ config.remoteNodeListFiltered = true;
 
 // fallback remote node list, in case fetching update failed, fill this with known to works remote nodes
 config.remoteNodeListFallback = [
-  'nd1.cryg.xyz:18898',
   'nd2.cryg.xyz:18898',
-  'nd3.cryg.xyz:18898',
   'nd4.cryg.xyz:18898',
+  'nd3.cryg.xyz:18898',
+  'nd1.cryg.xyz:18898',
   ];
 config.remoteNodeCacheSupported = false;
 config.remoteNodeSslSupported = false;

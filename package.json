@@ -2,7 +2,7 @@
   "name": "walletshell",
   "productName": "WalletShell",
   "description": "CryGCoin GUI Wallet",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "homepage": "https://github.com/mi-mai/crygcoin-wallet-electron",
   "repository": "https://github.com/mi-mai/crygcoin-wallet-electron",
   "main": "main.js",
